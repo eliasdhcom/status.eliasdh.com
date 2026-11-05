@@ -1,0 +1,34 @@
+<!--Author EliasDH Team-->
+<div class="service-row-head">
+    <div class="service-row-name">
+        <h3>{{ ('SERVICES.' + service.id + '.NAME') | translate: { default: service.name } }}</h3>
+        @let description = ('SERVICES.' + service.id + '.DESCRIPTION') | translate: { default: '' };
+        @if (description) {
+            <p class="service-row-description">{{ description }}</p>
+        }
+    </div>
+    <span class="service-row-pill" [class]="'service-row-pill service-' + service.status">
+        <span class="service-row-dot" aria-hidden="true"></span>
+        {{ 'STATUS.LEVEL.' + service.status | translate }}
+    </span>
+</div>
+<div class="uptime-bar" role="img" [attr.aria-label]="uptimeLabel">
+    @for (day of days; track day.date) {
+        <span class="uptime-day" [class]="'uptime-day day-' + level(day)" [title]="dayTitle(day)"></span>
+    }
+</div>
+<div class="service-row-scale" aria-hidden="true">
+    <span>{{ 'STATUS.DAYS_AGO' | translate: { days: visibleDays } }}</span>
+    <span class="service-row-uptime">{{ uptime }} {{ 'STATUS.UPTIME' | translate }}</span>
+    <span>{{ 'STATUS.TODAY' | translate }}</span>
+</div>
+@if (service.responseTimeMs !== null || hasNodes) {
+    <p class="service-row-meta">
+        @if (service.responseTimeMs !== null) {
+            <span>{{ 'STATUS.RESPONSE_TIME' | translate }}: {{ service.responseTimeMs }} ms</span>
+        }
+        @if (hasNodes) {
+            <span>{{ service.metrics?.nodesReady }} / {{ service.metrics?.nodesTotal }} {{ 'STATUS.NODES_HEALTHY' | translate }}</span>
+        }
+    </p>
+}

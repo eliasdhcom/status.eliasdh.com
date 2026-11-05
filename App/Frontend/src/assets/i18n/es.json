@@ -1,0 +1,104 @@
+{
+  "COMMON": {
+    "BACK": "Atrás",
+    "HOME": "Volver al inicio"
+  },
+  "FOOTER": {
+    "TRANSLATE1": "Política",
+    "TRANSLATE3": "Estado",
+    "TRANSLATE5": "Legal",
+    "TRANSLATE6": "Diseñado por el Equipo EliasDH",
+    "TRANSLATE7": " EliasDH. ",
+    "TRANSLATE8": "Todos los derechos reservados.",
+    "TAGLINE": "Webs, hosting y correo para empresas en Bélgica. Un único interlocutor.",
+    "EXPLORE": "Descubre",
+    "HOME": "Inicio",
+    "LEGAL": "Legal",
+    "CONTACT": "Contacto",
+    "BLOGS": "Blogs"
+  },
+  "CONTEXTMENU": {
+    "TRANSLATE1": "Copiar Dirección del Enlace",
+    "TRANSLATE2": "Copiar al Portapapeles",
+    "TRANSLATE3": "Cambiar Tema"
+  },
+  "CONTACTBAR": {
+    "CALL": "Llámanos",
+    "EMAIL": "Envíanos un correo"
+  },
+  "STATUS": {
+    "TITLE": "Estado de la infraestructura",
+    "BACK": "Volver",
+    "LOADING": "Comprobando el estado...",
+    "ALL_OPERATIONAL": "Todos los sistemas operativos",
+    "DEGRADED": "Algunos sistemas presentan problemas",
+    "OUTAGE": "Uno o más servicios están caídos",
+    "SERVICES_OPERATIONAL": "servicios operativos",
+    "NODES_HEALTHY": "nodos saludables",
+    "UPDATED": "Última comprobación",
+    "NO_DATA": "Esperando la primera comprobación...",
+    "ERROR": "No se pudo cargar el estado. Inténtalo de nuevo más tarde.",
+    "RETRY": "Reintentar",
+    "STALE": "La última comprobación fue hace {{minutes}} minutos. Es posible que el estado mostrado esté desactualizado.",
+    "LEVEL": {
+      "operational": "Operativo",
+      "degraded": "Rendimiento reducido",
+      "outage": "Caída"
+    },
+    "UPTIME": "disponibilidad",
+    "DAYS_AGO": "Hace {{days}} días",
+    "TODAY": "Hoy",
+    "UPTIME_ARIA": "Disponibilidad en los últimos {{days}} días: {{uptime}}",
+    "RESPONSE_TIME": "Tiempo de respuesta",
+    "DAY_NO_DATA": "Sin datos",
+    "DAY_UPTIME": "{{uptime}} disponible",
+    "INCIDENTS_TITLE": "Incidentes recientes",
+    "INCIDENTS_NONE": "Ningún incidente en los últimos 30 días.",
+    "INCIDENT_ONGOING": "En curso",
+    "INCIDENT_RESOLVED": "Resuelto",
+    "INCIDENT_DURATION": "Duración"
+  },
+  "GROUPS": {
+    "websites": "Sitios web",
+    "services": "Servicios"
+  },
+  "SERVICES": {
+    "website": {
+      "NAME": "Sitio web EliasDH",
+      "DESCRIPTION": "El sitio web público de EliasDH"
+    },
+    "app": {
+      "NAME": "Aplicación EliasDH",
+      "DESCRIPTION": "El portal de clientes de EliasDH"
+    },
+    "web": {
+      "NAME": "EliasDH Web",
+      "DESCRIPTION": "El alojamiento web de EliasDH"
+    },
+    "qr": {
+      "NAME": "EliasDH QR",
+      "DESCRIPTION": "Los códigos QR de EliasDH"
+    },
+    "mail": {
+      "NAME": "EliasDH Mail",
+      "DESCRIPTION": "El correo profesional de EliasDH"
+    },
+    "domains": {
+      "NAME": "Dominios EliasDH",
+      "DESCRIPTION": "La gestión de los dominios de EliasDH"
+    }
+  },
+  "SEO": {
+    "STATUS": {
+      "DESCRIPTION": "El estado en tiempo real de la infraestructura y los servicios de EliasDH."
+    },
+    "NOTFOUND": {
+      "DESCRIPTION": "Esta página no existe (o ya no existe)."
+    }
+  },
+  "NOTFOUND": {
+    "TITLE": "Esta página no existe (ya)",
+    "TEXT": "No te preocupes: el estado actual de nuestros sistemas está en la página de inicio.",
+    "WEBSITE": "Ir a eliasdh.com"
+  }
+}

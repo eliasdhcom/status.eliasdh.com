@@ -1,0 +1,231 @@
+/**
+    * @author EliasDH Team
+    * @see https://eliasdh.com
+    * @since 05/11/2026
+**/
+
+/* Status */
+.status-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.status-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding: clamp(40px, 6vw, 72px) var(--gutter);
+}
+
+.status-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 860px;
+    padding: 44px 32px 36px;
+    text-align: center;
+    color: var(--success);
+    box-shadow: var(--shadow-md);
+}
+
+.status-card.status-degraded {
+    color: var(--warning);
+}
+
+.status-card.status-outage {
+    color: var(--danger);
+}
+
+.status-card.status-waiting {
+    color: var(--muted);
+}
+
+.status-icon {
+    width: 88px;
+    height: 88px;
+    margin-bottom: 8px;
+    animation: status-pop 0.4s var(--ease-out);
+}
+
+.status-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.status-card.status-degraded .status-icon,
+.status-card.status-outage .status-icon {
+    animation: status-pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes status-pop {
+    from {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes status-pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.6;
+    }
+}
+
+.status-title {
+    font-size: clamp(1.5rem, 3.5vw, 2rem);
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    color: var(--title);
+}
+
+.status-subtitle {
+    margin: 0;
+    color: var(--text);
+    font-size: 1.0625rem;
+    font-weight: 700;
+}
+
+.status-updated {
+    margin: 6px 0 0;
+    color: var(--muted);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.8125rem;
+}
+
+.status-notice {
+    width: 100%;
+    max-width: 860px;
+    margin: -12px 0 0;
+    padding: 14px 18px;
+    border: 1px solid color-mix(in srgb, var(--warning) 45%, transparent);
+    border-radius: var(--radius);
+    background: color-mix(in srgb, var(--warning) 10%, transparent);
+    color: var(--text);
+    font-size: 0.9375rem;
+    line-height: 1.5;
+}
+
+.status-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    width: 100%;
+    max-width: 860px;
+}
+
+.status-group-title {
+    margin: 0 0 12px 4px;
+}
+
+.status-list {
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+
+.status-incident {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 18px 24px;
+}
+
+.status-incident + .status-incident {
+    border-top: 1px solid var(--border);
+}
+
+.status-incident-dot {
+    flex-shrink: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--muted);
+}
+
+.status-incident-dot.service-degraded {
+    background: var(--warning);
+}
+
+.status-incident-dot.service-outage {
+    background: var(--danger);
+}
+
+.status-incident-body {
+    flex: 1;
+    min-width: 0;
+}
+
+.status-incident-body h3 {
+    color: var(--text);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.status-incident-level {
+    margin-left: 8px;
+    color: var(--muted);
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.status-incident-body p {
+    margin: 4px 0 0;
+    color: var(--muted);
+    font-size: 0.875rem;
+}
+
+.status-incident-state {
+    flex-shrink: 0;
+    color: var(--success);
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.status-incident-state.status-incident-ongoing {
+    color: var(--danger);
+}
+
+.status-empty {
+    margin: 0;
+    padding: 22px 24px;
+    color: var(--muted);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .status-icon,
+    .status-card.status-degraded .status-icon,
+    .status-card.status-outage .status-icon {
+        animation: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .status-card {
+        padding: 36px 20px 28px;
+    }
+
+    .status-icon {
+        width: 64px;
+        height: 64px;
+    }
+
+    .status-incident {
+        flex-wrap: wrap;
+        padding: 16px;
+    }
+
+    .status-incident-state {
+        margin-left: 24px;
+    }
+}
+/* Status */

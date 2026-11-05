@@ -1,0 +1,104 @@
+{
+  "COMMON": {
+    "BACK": "Terug",
+    "HOME": "Naar de startpagina"
+  },
+  "FOOTER": {
+    "TRANSLATE1": "Beleid",
+    "TRANSLATE3": "Status",
+    "TRANSLATE5": "Juridisch",
+    "TRANSLATE6": "Ontworpen door het EliasDH Team",
+    "TRANSLATE7": " EliasDH. ",
+    "TRANSLATE8": "Alle rechten voorbehouden.",
+    "TAGLINE": "Websites, hosting en e-mail voor ondernemers in België. Eén aanspreekpunt.",
+    "EXPLORE": "Ontdek",
+    "HOME": "Home",
+    "LEGAL": "Juridisch",
+    "CONTACT": "Contact",
+    "BLOGS": "Blogs"
+  },
+  "CONTEXTMENU": {
+    "TRANSLATE1": "Kopieer linkadres",
+    "TRANSLATE2": "Kopieer naar klembord",
+    "TRANSLATE3": "Wissel thema"
+  },
+  "CONTACTBAR": {
+    "CALL": "Bel ons",
+    "EMAIL": "E-mail ons"
+  },
+  "STATUS": {
+    "TITLE": "Infrastructuurstatus",
+    "BACK": "Terug",
+    "LOADING": "Status controleren...",
+    "ALL_OPERATIONAL": "Alle systemen operationeel",
+    "DEGRADED": "Sommige systemen ondervinden problemen",
+    "OUTAGE": "Er is een storing bij een of meer diensten",
+    "SERVICES_OPERATIONAL": "diensten operationeel",
+    "NODES_HEALTHY": "gezonde nodes",
+    "UPDATED": "Laatst gecontroleerd",
+    "NO_DATA": "Wachten op de eerste statuscontrole...",
+    "ERROR": "De status kon niet worden geladen. Probeer het later opnieuw.",
+    "RETRY": "Opnieuw proberen",
+    "STALE": "De laatste controle was {{minutes}} minuten geleden. De getoonde status kan verouderd zijn.",
+    "LEVEL": {
+      "operational": "Operationeel",
+      "degraded": "Verminderde prestaties",
+      "outage": "Storing"
+    },
+    "UPTIME": "uptime",
+    "DAYS_AGO": "{{days}} dagen geleden",
+    "TODAY": "Vandaag",
+    "UPTIME_ARIA": "Beschikbaarheid over de laatste {{days}} dagen: {{uptime}}",
+    "RESPONSE_TIME": "Reactietijd",
+    "DAY_NO_DATA": "Geen gegevens",
+    "DAY_UPTIME": "{{uptime}} beschikbaar",
+    "INCIDENTS_TITLE": "Recente incidenten",
+    "INCIDENTS_NONE": "Geen incidenten in de afgelopen 30 dagen.",
+    "INCIDENT_ONGOING": "Lopend",
+    "INCIDENT_RESOLVED": "Opgelost",
+    "INCIDENT_DURATION": "Duur"
+  },
+  "GROUPS": {
+    "websites": "Websites",
+    "services": "Diensten"
+  },
+  "SERVICES": {
+    "website": {
+      "NAME": "EliasDH Website",
+      "DESCRIPTION": "De openbare website van EliasDH"
+    },
+    "app": {
+      "NAME": "EliasDH Applicatie",
+      "DESCRIPTION": "Het klantenportaal van EliasDH"
+    },
+    "web": {
+      "NAME": "EliasDH Web",
+      "DESCRIPTION": "De webhosting van EliasDH"
+    },
+    "qr": {
+      "NAME": "EliasDH QR",
+      "DESCRIPTION": "De QR-codes van EliasDH"
+    },
+    "mail": {
+      "NAME": "EliasDH Mail",
+      "DESCRIPTION": "De zakelijke e-mail van EliasDH"
+    },
+    "domains": {
+      "NAME": "EliasDH Domeinen",
+      "DESCRIPTION": "Het beheer van de EliasDH-domeinen"
+    }
+  },
+  "SEO": {
+    "STATUS": {
+      "DESCRIPTION": "Bekijk in realtime de status van de infrastructuur en diensten van EliasDH."
+    },
+    "NOTFOUND": {
+      "DESCRIPTION": "Deze pagina bestaat niet (meer)."
+    }
+  },
+  "NOTFOUND": {
+    "TITLE": "Deze pagina bestaat niet (meer)",
+    "TEXT": "Geen zorgen: de actuele status van onze systemen vind je op de startpagina.",
+    "WEBSITE": "Naar eliasdh.com"
+  }
+}

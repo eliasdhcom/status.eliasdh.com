@@ -1,0 +1,104 @@
+{
+  "COMMON": {
+    "BACK": "Retour",
+    "HOME": "Retour à l'accueil"
+  },
+  "FOOTER": {
+    "TRANSLATE1": "Politique",
+    "TRANSLATE3": "Statut",
+    "TRANSLATE5": "Légal",
+    "TRANSLATE6": "Conçu par l'équipe EliasDH",
+    "TRANSLATE7": " EliasDH. ",
+    "TRANSLATE8": "Tous droits réservés.",
+    "TAGLINE": "Sites web, hébergement et e-mail pour les entreprises en Belgique. Un seul interlocuteur.",
+    "EXPLORE": "Découvrir",
+    "HOME": "Accueil",
+    "LEGAL": "Juridique",
+    "CONTACT": "Contact",
+    "BLOGS": "Blogs"
+  },
+  "CONTEXTMENU": {
+    "TRANSLATE1": "Copier l'adresse du lien",
+    "TRANSLATE2": "Copier dans le presse-papiers",
+    "TRANSLATE3": "Basculer le thème"
+  },
+  "CONTACTBAR": {
+    "CALL": "Appelez-nous",
+    "EMAIL": "Envoyez-nous un e-mail"
+  },
+  "STATUS": {
+    "TITLE": "État de l'infrastructure",
+    "BACK": "Retour",
+    "LOADING": "Vérification du statut...",
+    "ALL_OPERATIONAL": "Tous les systèmes sont opérationnels",
+    "DEGRADED": "Certains systèmes rencontrent des problèmes",
+    "OUTAGE": "Un ou plusieurs services sont en panne",
+    "SERVICES_OPERATIONAL": "services opérationnels",
+    "NODES_HEALTHY": "nœuds sains",
+    "UPDATED": "Dernière vérification",
+    "NO_DATA": "En attente de la première vérification...",
+    "ERROR": "Le statut n'a pas pu être chargé. Veuillez réessayer plus tard.",
+    "RETRY": "Réessayer",
+    "STALE": "La dernière vérification date de {{minutes}} minutes. Le statut affiché peut être obsolète.",
+    "LEVEL": {
+      "operational": "Opérationnel",
+      "degraded": "Performances réduites",
+      "outage": "Panne"
+    },
+    "UPTIME": "disponibilité",
+    "DAYS_AGO": "Il y a {{days}} jours",
+    "TODAY": "Aujourd'hui",
+    "UPTIME_ARIA": "Disponibilité sur les {{days}} derniers jours : {{uptime}}",
+    "RESPONSE_TIME": "Temps de réponse",
+    "DAY_NO_DATA": "Aucune donnée",
+    "DAY_UPTIME": "{{uptime}} disponible",
+    "INCIDENTS_TITLE": "Incidents récents",
+    "INCIDENTS_NONE": "Aucun incident au cours des 30 derniers jours.",
+    "INCIDENT_ONGOING": "En cours",
+    "INCIDENT_RESOLVED": "Résolu",
+    "INCIDENT_DURATION": "Durée"
+  },
+  "GROUPS": {
+    "websites": "Sites web",
+    "services": "Services"
+  },
+  "SERVICES": {
+    "website": {
+      "NAME": "Site web EliasDH",
+      "DESCRIPTION": "Le site web public d'EliasDH"
+    },
+    "app": {
+      "NAME": "Application EliasDH",
+      "DESCRIPTION": "Le portail client d'EliasDH"
+    },
+    "web": {
+      "NAME": "EliasDH Web",
+      "DESCRIPTION": "L'hébergement web d'EliasDH"
+    },
+    "qr": {
+      "NAME": "EliasDH QR",
+      "DESCRIPTION": "Les codes QR d'EliasDH"
+    },
+    "mail": {
+      "NAME": "EliasDH Mail",
+      "DESCRIPTION": "L'e-mail professionnel d'EliasDH"
+    },
+    "domains": {
+      "NAME": "Domaines EliasDH",
+      "DESCRIPTION": "La gestion des domaines d'EliasDH"
+    }
+  },
+  "SEO": {
+    "STATUS": {
+      "DESCRIPTION": "Le statut en temps réel de l'infrastructure et des services d'EliasDH."
+    },
+    "NOTFOUND": {
+      "DESCRIPTION": "Cette page n'existe pas (ou plus)."
+    }
+  },
+  "NOTFOUND": {
+    "TITLE": "Cette page n'existe pas (ou plus)",
+    "TEXT": "Pas de souci : l'état actuel de nos systèmes se trouve sur la page d'accueil.",
+    "WEBSITE": "Aller sur eliasdh.com"
+  }
+}

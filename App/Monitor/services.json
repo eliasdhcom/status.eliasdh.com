@@ -1,0 +1,59 @@
+{
+  "intervalMinutes": 5,
+  "defaults": {
+    "method": "GET",
+    "expectStatus": [200],
+    "timeoutMs": 10000,
+    "degradedMs": 3000,
+    "retries": 2,
+    "retryDelayMs": 5000
+  },
+  "groups": [
+    { "id": "websites", "name": "Websites" },
+    { "id": "services", "name": "Services" }
+  ],
+  "services": [
+    {
+      "id": "website",
+      "name": "EliasDH Website",
+      "group": "websites",
+      "url": "https://eliasdh.com",
+      "expectBody": "EliasDH"
+    },
+    {
+      "id": "app",
+      "name": "EliasDH App",
+      "group": "websites",
+      "url": "https://app.eliasdh.com",
+      "expectBody": "EliasDH"
+    },
+    {
+      "id": "web",
+      "name": "EliasDH Web",
+      "group": "services",
+      "sameAs": "app"
+    },
+    {
+      "id": "qr",
+      "name": "EliasDH QR",
+      "group": "services",
+      "sameAs": "app"
+    },
+    {
+      "id": "mail",
+      "name": "EliasDH Mail",
+      "group": "services",
+      "type": "tls",
+      "targets": [
+        { "host": "imap.migadu.com", "port": 993, "expectGreeting": "* OK" },
+        { "host": "smtp.migadu.com", "port": 465, "expectGreeting": "220" }
+      ]
+    },
+    {
+      "id": "domains",
+      "name": "EliasDH Domains",
+      "group": "services",
+      "url": "https://eu.api.ovh.com/1.0/auth/time"
+    }
+  ]
+}

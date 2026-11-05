@@ -1,0 +1,104 @@
+{
+  "COMMON": {
+    "BACK": "Zurück",
+    "HOME": "Zur Startseite"
+  },
+  "FOOTER": {
+    "TRANSLATE1": "Politik",
+    "TRANSLATE3": "Status",
+    "TRANSLATE5": "Recht",
+    "TRANSLATE6": "Entworfen vom EliasDH-Team",
+    "TRANSLATE7": " EliasDH. ",
+    "TRANSLATE8": "Alle Rechte vorbehalten.",
+    "TAGLINE": "Websites, Hosting und E-Mail für Unternehmen in Belgien. Ein Ansprechpartner.",
+    "EXPLORE": "Entdecken",
+    "HOME": "Startseite",
+    "LEGAL": "Rechtliches",
+    "CONTACT": "Kontakt",
+    "BLOGS": "Blogs"
+  },
+  "CONTEXTMENU": {
+    "TRANSLATE1": "Linkadresse kopieren",
+    "TRANSLATE2": "In die Zwischenablage kopieren",
+    "TRANSLATE3": "Thema wechseln"
+  },
+  "CONTACTBAR": {
+    "CALL": "Rufen Sie uns an",
+    "EMAIL": "E-Mail senden"
+  },
+  "STATUS": {
+    "TITLE": "Infrastrukturstatus",
+    "BACK": "Zurück",
+    "LOADING": "Status wird geprüft...",
+    "ALL_OPERATIONAL": "Alle Systeme funktionieren einwandfrei",
+    "DEGRADED": "Einige Systeme haben Probleme",
+    "OUTAGE": "Ein oder mehrere Dienste sind gestört",
+    "SERVICES_OPERATIONAL": "Dienste funktionieren",
+    "NODES_HEALTHY": "gesunde Nodes",
+    "UPDATED": "Zuletzt geprüft",
+    "NO_DATA": "Warten auf die erste Statusprüfung...",
+    "ERROR": "Der Status konnte nicht geladen werden. Bitte versuchen Sie es später erneut.",
+    "RETRY": "Erneut versuchen",
+    "STALE": "Die letzte Prüfung war vor {{minutes}} Minuten. Der angezeigte Status ist möglicherweise veraltet.",
+    "LEVEL": {
+      "operational": "Betriebsbereit",
+      "degraded": "Eingeschränkte Leistung",
+      "outage": "Störung"
+    },
+    "UPTIME": "Verfügbarkeit",
+    "DAYS_AGO": "Vor {{days}} Tagen",
+    "TODAY": "Heute",
+    "UPTIME_ARIA": "Verfügbarkeit in den letzten {{days}} Tagen: {{uptime}}",
+    "RESPONSE_TIME": "Antwortzeit",
+    "DAY_NO_DATA": "Keine Daten",
+    "DAY_UPTIME": "{{uptime}} verfügbar",
+    "INCIDENTS_TITLE": "Aktuelle Vorfälle",
+    "INCIDENTS_NONE": "Keine Vorfälle in den letzten 30 Tagen.",
+    "INCIDENT_ONGOING": "Laufend",
+    "INCIDENT_RESOLVED": "Behoben",
+    "INCIDENT_DURATION": "Dauer"
+  },
+  "GROUPS": {
+    "websites": "Websites",
+    "services": "Dienste"
+  },
+  "SERVICES": {
+    "website": {
+      "NAME": "EliasDH Website",
+      "DESCRIPTION": "Die öffentliche Website von EliasDH"
+    },
+    "app": {
+      "NAME": "EliasDH Anwendung",
+      "DESCRIPTION": "Das Kundenportal von EliasDH"
+    },
+    "web": {
+      "NAME": "EliasDH Web",
+      "DESCRIPTION": "Das Webhosting von EliasDH"
+    },
+    "qr": {
+      "NAME": "EliasDH QR",
+      "DESCRIPTION": "Die QR-Codes von EliasDH"
+    },
+    "mail": {
+      "NAME": "EliasDH Mail",
+      "DESCRIPTION": "Die geschäftliche E-Mail von EliasDH"
+    },
+    "domains": {
+      "NAME": "EliasDH Domains",
+      "DESCRIPTION": "Die Verwaltung der EliasDH-Domains"
+    }
+  },
+  "SEO": {
+    "STATUS": {
+      "DESCRIPTION": "Der Echtzeit-Status der Infrastruktur und Dienste von EliasDH."
+    },
+    "NOTFOUND": {
+      "DESCRIPTION": "Diese Seite existiert nicht (mehr)."
+    }
+  },
+  "NOTFOUND": {
+    "TITLE": "Diese Seite existiert nicht (mehr)",
+    "TEXT": "Keine Sorge: Den aktuellen Status unserer Systeme finden Sie auf der Startseite.",
+    "WEBSITE": "Zu eliasdh.com"
+  }
+}

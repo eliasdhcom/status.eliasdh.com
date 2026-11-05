@@ -1,0 +1,137 @@
+/**
+    * @author EliasDH Team
+    * @see https://eliasdh.com
+    * @since 05/11/2026
+**/
+
+/* Service Row */
+:host {
+    display: block;
+    padding: 22px 24px;
+}
+
+:host(:not(:first-child)) {
+    border-top: 1px solid var(--border);
+}
+
+.service-row-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.service-row-name h3 {
+    color: var(--title);
+    font-size: 1.125rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+.service-row-description {
+    margin: 4px 0 0;
+    color: var(--muted);
+    font-size: 0.9375rem;
+    line-height: 1.5;
+}
+
+.service-row-pill {
+    display: inline-flex;
+    flex-shrink: 0;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    border-radius: var(--radius-pill);
+    background: color-mix(in srgb, currentColor 13%, transparent);
+    font-size: 0.875rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.service-row-pill.service-operational { color: var(--success); }
+.service-row-pill.service-degraded { color: var(--warning); }
+.service-row-pill.service-outage { color: var(--danger); }
+
+.service-row-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: currentColor;
+}
+
+.uptime-bar {
+    display: flex;
+    gap: 2px;
+    height: 36px;
+    margin-top: 18px;
+}
+
+.uptime-day {
+    flex: 1 1 0;
+    min-width: 0;
+    border-radius: 3px;
+    transition: transform 0.15s var(--ease-out), opacity 0.15s ease;
+}
+
+.uptime-day:hover {
+    transform: scaleY(1.12);
+    opacity: 0.8;
+}
+
+.uptime-day.day-ok { background: var(--success); }
+.uptime-day.day-degraded { background: var(--warning); }
+.uptime-day.day-down { background: var(--danger); }
+.uptime-day.day-none { background: var(--border-strong); opacity: 0.45; }
+.uptime-day.day-none:hover { opacity: 0.6; }
+
+.service-row-scale {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 8px;
+    color: var(--muted);
+    font-size: 0.8125rem;
+}
+
+.service-row-uptime {
+    color: var(--text);
+    font-weight: 700;
+}
+
+.service-row-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 20px;
+    margin: 12px 0 0;
+    color: var(--muted);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.8125rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .uptime-day,
+    .uptime-day:hover {
+        transform: none;
+        transition: none;
+    }
+}
+
+@media (max-width: 600px) {
+    :host {
+        padding: 18px 16px;
+    }
+
+    .service-row-head {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .uptime-bar {
+        height: 30px;
+    }
+
+    .service-row-scale {
+        font-size: 0.75rem;
+    }
+}
+/* Service Row */

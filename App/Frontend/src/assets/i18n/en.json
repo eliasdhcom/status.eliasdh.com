@@ -1,0 +1,104 @@
+{
+  "COMMON": {
+    "BACK": "Back",
+    "HOME": "Back to home"
+  },
+  "FOOTER": {
+    "TRANSLATE1": "Policy",
+    "TRANSLATE3": "Status",
+    "TRANSLATE5": "Legal",
+    "TRANSLATE6": "Designed by the EliasDH Team",
+    "TRANSLATE7": " EliasDH. ",
+    "TRANSLATE8": "All rights reserved.",
+    "TAGLINE": "Websites, hosting and email for businesses in Belgium. One point of contact.",
+    "EXPLORE": "Explore",
+    "HOME": "Home",
+    "LEGAL": "Legal",
+    "CONTACT": "Contact",
+    "BLOGS": "Blogs"
+  },
+  "CONTEXTMENU": {
+    "TRANSLATE1": "Copy Link Address",
+    "TRANSLATE2": "Copy To Clipboard",
+    "TRANSLATE3": "Toggle Theme"
+  },
+  "CONTACTBAR": {
+    "CALL": "Call us",
+    "EMAIL": "Email us"
+  },
+  "STATUS": {
+    "TITLE": "Infrastructure Status",
+    "BACK": "Back",
+    "LOADING": "Checking status...",
+    "ALL_OPERATIONAL": "All systems operational",
+    "DEGRADED": "Some systems are experiencing issues",
+    "OUTAGE": "One or more services are down",
+    "SERVICES_OPERATIONAL": "services operational",
+    "NODES_HEALTHY": "healthy nodes",
+    "UPDATED": "Last checked",
+    "NO_DATA": "Waiting for the first status check...",
+    "ERROR": "The status could not be loaded. Please try again later.",
+    "RETRY": "Try again",
+    "STALE": "The last check was {{minutes}} minutes ago. The status shown may be out of date.",
+    "LEVEL": {
+      "operational": "Operational",
+      "degraded": "Degraded performance",
+      "outage": "Outage"
+    },
+    "UPTIME": "uptime",
+    "DAYS_AGO": "{{days}} days ago",
+    "TODAY": "Today",
+    "UPTIME_ARIA": "Availability over the last {{days}} days: {{uptime}}",
+    "RESPONSE_TIME": "Response time",
+    "DAY_NO_DATA": "No data",
+    "DAY_UPTIME": "{{uptime}} available",
+    "INCIDENTS_TITLE": "Recent incidents",
+    "INCIDENTS_NONE": "No incidents in the last 30 days.",
+    "INCIDENT_ONGOING": "Ongoing",
+    "INCIDENT_RESOLVED": "Resolved",
+    "INCIDENT_DURATION": "Duration"
+  },
+  "GROUPS": {
+    "websites": "Websites",
+    "services": "Services"
+  },
+  "SERVICES": {
+    "website": {
+      "NAME": "EliasDH Website",
+      "DESCRIPTION": "The public EliasDH website"
+    },
+    "app": {
+      "NAME": "EliasDH Application",
+      "DESCRIPTION": "The EliasDH customer portal"
+    },
+    "web": {
+      "NAME": "EliasDH Web",
+      "DESCRIPTION": "The EliasDH web hosting"
+    },
+    "qr": {
+      "NAME": "EliasDH QR",
+      "DESCRIPTION": "The EliasDH QR codes"
+    },
+    "mail": {
+      "NAME": "EliasDH Mail",
+      "DESCRIPTION": "The EliasDH business email"
+    },
+    "domains": {
+      "NAME": "EliasDH Domains",
+      "DESCRIPTION": "The management of the EliasDH domains"
+    }
+  },
+  "SEO": {
+    "STATUS": {
+      "DESCRIPTION": "Real-time status of the EliasDH infrastructure and services."
+    },
+    "NOTFOUND": {
+      "DESCRIPTION": "This page does not exist (anymore)."
+    }
+  },
+  "NOTFOUND": {
+    "TITLE": "This page doesn't exist (anymore)",
+    "TEXT": "No worries: you can find the current status of our systems on the home page.",
+    "WEBSITE": "Go to eliasdh.com"
+  }
+}

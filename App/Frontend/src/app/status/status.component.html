@@ -1,0 +1,103 @@
+<!--Author EliasDH Team-->
+<div class="global-body status-page">
+    <app-contact-bar></app-contact-bar>
+    <app-page-header titleKey="STATUS.TITLE" backLabelKey="STATUS.BACK" [backHref]="mainSiteHome"></app-page-header>
+    <main class="status-content">
+        @if (loading && !report) {
+            <app-loading-spinner messageKey="STATUS.LOADING"></app-loading-spinner>
+        }
+        @if (error && !report) {
+            <app-error-box [errorMessage]="'STATUS.ERROR' | translate" retryButtonKey="STATUS.RETRY" (retry)="retry()"></app-error-box>
+        }
+        @if (report) {
+            <section class="status-card global-card" [class]="'status-card global-card status-' + (hasData ? report.overall : 'waiting')" role="status" aria-live="polite">
+                <div class="status-icon">
+                    @switch (hasData ? report.overall : 'waiting') {
+                        @case ('operational') {
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <circle cx="12" cy="12" r="11" fill="currentColor" opacity="0.15"/>
+                                <path d="M7 12.5L10.5 16L17 8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        }
+                        @case ('degraded') {
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <circle cx="12" cy="12" r="11" fill="currentColor" opacity="0.15"/>
+                                <path d="M12 7V13M12 16.5V17" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                            </svg>
+                        }
+                        @case ('outage') {
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <circle cx="12" cy="12" r="11" fill="currentColor" opacity="0.15"/>
+                                <path d="M8 8L16 16M16 8L8 16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                            </svg>
+                        }
+                        @default {
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <circle cx="12" cy="12" r="11" fill="currentColor" opacity="0.15"/>
+                                <path d="M12 6.5V12L15.5 14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        }
+                    }
+                </div>
+                @if (hasData) {
+                    <h2 class="status-title">
+                        {{ (report.overall === 'operational' ? 'STATUS.ALL_OPERATIONAL' : report.overall === 'degraded' ? 'STATUS.DEGRADED' : 'STATUS.OUTAGE') | translate }}
+                    </h2>
+                    <p class="status-subtitle">
+                        {{ operationalCount }} / {{ report.services.length }} {{ 'STATUS.SERVICES_OPERATIONAL' | translate }}
+                    </p>
+                    <p class="status-updated">{{ 'STATUS.UPDATED' | translate }}: {{ report.generatedAt | date: 'HH:mm:ss' }}</p>
+                } @else {
+                    <h2 class="status-title">{{ 'STATUS.NO_DATA' | translate }}</h2>
+                }
+            </section>
+            @if (stale) {
+                <p class="status-notice" role="alert">{{ 'STATUS.STALE' | translate: { minutes: minutesSinceUpdate } }}</p>
+            }
+            @if (error) {
+                <p class="status-notice" role="alert">{{ 'STATUS.ERROR' | translate }}</p>
+            }
+            @if (hasData) {
+                <div class="status-sections">
+                    @for (group of report.groups; track group.id) {
+                        <section>
+                            <h2 class="global-eyebrow status-group-title">{{ ('GROUPS.' + group.id) | translate: { default: group.name } }}</h2>
+                            <div class="status-list global-card">
+                                @for (service of servicesOf(group); track service.id) {
+                                    <app-service-row [service]="service"></app-service-row>
+                                }
+                            </div>
+                        </section>
+                    }
+                    <section>
+                        <h2 class="global-eyebrow status-group-title">{{ 'STATUS.INCIDENTS_TITLE' | translate }}</h2>
+                        <div class="status-list global-card">
+                            @for (incident of report.incidents; track incident.serviceId + incident.startedAt) {
+                                <article class="status-incident">
+                                    <span class="status-incident-dot" [class]="'status-incident-dot service-' + incident.status" aria-hidden="true"></span>
+                                    <div class="status-incident-body">
+                                        <h3>
+                                            {{ ('SERVICES.' + incident.serviceId + '.NAME') | translate: { default: serviceName(incident) } }}
+                                            <span class="status-incident-level">{{ ('STATUS.LEVEL.' + incident.status) | translate }}</span>
+                                        </h3>
+                                        <p>
+                                            {{ when(incident.startedAt) }}
+                                            · {{ 'STATUS.INCIDENT_DURATION' | translate }}: {{ duration(incident) }}
+                                        </p>
+                                    </div>
+                                    <span class="status-incident-state" [class.status-incident-ongoing]="!incident.resolvedAt">
+                                        {{ (incident.resolvedAt ? 'STATUS.INCIDENT_RESOLVED' : 'STATUS.INCIDENT_ONGOING') | translate }}
+                                    </span>
+                                </article>
+                            } @empty {
+                                <p class="status-empty">{{ 'STATUS.INCIDENTS_NONE' | translate }}</p>
+                            }
+                        </div>
+                    </section>
+                </div>
+            }
+        }
+    </main>
+    <app-footer></app-footer>
+    <app-contextmenu></app-contextmenu>
+</div>

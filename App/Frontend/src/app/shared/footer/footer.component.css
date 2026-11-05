@@ -1,0 +1,183 @@
+/**
+    * @author EliasDH Team
+    * @see https://eliasdh.com
+    * @since 01/01/2025
+**/
+
+/* Footer */
+.footer {
+    border-top: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--muted);
+}
+
+.footer-inner {
+    display: grid;
+    grid-template-columns: 1.7fr 1fr 1fr 1.3fr;
+    gap: clamp(28px, 4vw, 56px);
+    width: min(100% - 2 * var(--gutter), 1200px);
+    margin-inline: auto;
+    padding-block: clamp(44px, 6vw, 72px) clamp(32px, 4vw, 48px);
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 14px;
+    color: var(--title);
+    font-size: 1.375rem;
+    font-weight: 900;
+    letter-spacing: -0.01em;
+}
+
+.footer-logo svg {
+    width: 36px;
+    height: 36px;
+    fill: var(--cta);
+}
+
+.footer-tagline {
+    max-width: 30ch;
+    margin: 0 0 22px;
+    line-height: 1.6;
+}
+
+.footer-social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-social a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    overflow: hidden;
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius);
+    color: var(--title);
+    transition: color 0.25s ease, border-color 0.25s ease, transform 0.25s var(--ease-out);
+}
+
+.footer-social a::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--social, var(--cta));
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+.footer-social a:hover {
+    transform: translateY(-2px);
+    border-color: transparent;
+    color: #ffffff;
+}
+
+.footer-social a:hover::before {
+    opacity: 1;
+}
+
+.footer-social svg {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+.footer-social a[data-social="instagram"] { --social: var(--instagram-color); }
+.footer-social a[data-social="github"] { --social: var(--github-color); }
+.footer-social a[data-social="linkedin"] { --social: var(--linkedin-color); }
+.footer-social a[data-social="google"] { --social: var(--google-color); }
+.footer-social a[data-social="facebook"] { --social: var(--facebook-color); }
+.footer-social a[data-social="whatsapp"] { --social: var(--whatsapp-color); }
+
+.footer-column h2 {
+    margin-bottom: 16px;
+    color: var(--title);
+    font-size: 0.8125rem;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+}
+
+.footer-column ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-column a {
+    color: var(--muted);
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-column a:hover {
+    color: var(--link);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 6px 24px;
+    width: min(100% - 2 * var(--gutter), 1200px);
+    margin-inline: auto;
+    padding-block: 22px;
+    border-top: 1px solid var(--border);
+    font-size: 0.875rem;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-bottom a {
+    color: var(--link);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+@media (max-width: 960px) {
+    .footer-inner {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 520px) {
+    .footer-inner {
+        row-gap: 32px;
+    }
+
+    .footer-column:last-child {
+        grid-column: 1 / -1;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+    }
+}
+/* Footer */

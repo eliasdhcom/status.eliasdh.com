@@ -1,0 +1,17 @@
+############################
+# @author EliasDH Team     #
+# @see https://eliasdh.com #
+# @since 01/01/2025        #
+############################
+# Ignore default
+.vscode
+
+App/Frontend/node_modules
+App/Frontend/.angular
+App/Frontend/dist
+App/Frontend/out-tsc
+
+App/Monitor/history.json
+App/Monitor/status.json
+
+App/Frontend/src/data

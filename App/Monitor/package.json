@@ -1,0 +1,15 @@
+{
+  "name": "monitor",
+  "version": "1.0.0",
+  "description": "Probes the EliasDH websites and webservices and writes the status data for status.eliasdh.com",
+  "private": true,
+  "main": "src/monitor.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/monitor.js",
+    "demo": "node src/monitor.js --demo --out ../Frontend/src/data/status.json",
+    "test": "node --test"
+  }
+}
