@@ -64,11 +64,11 @@
   },
   "SERVICES": {
     "website": {
-      "NAME": "Sitio web EliasDH",
+      "NAME": "EliasDH Website",
       "DESCRIPTION": "El sitio web público de EliasDH"
     },
     "app": {
-      "NAME": "Aplicación EliasDH",
+      "NAME": "EliasDH App",
       "DESCRIPTION": "El portal de clientes de EliasDH"
     },
     "web": {
@@ -81,11 +81,11 @@
     },
     "mail": {
       "NAME": "EliasDH Mail",
-      "DESCRIPTION": "El correo profesional de EliasDH"
+      "DESCRIPTION": "El EliasDH Mail"
     },
     "domains": {
-      "NAME": "EliasDH Dominio",
-      "DESCRIPTION": "La gestión de los dominios de EliasDH"
+      "NAME": "EliasDH DNS",
+      "DESCRIPTION": "El EliasDH DNS"
     }
   },
   "SEO": {

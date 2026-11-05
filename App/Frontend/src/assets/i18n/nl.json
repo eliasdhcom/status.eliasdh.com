@@ -68,7 +68,7 @@
       "DESCRIPTION": "De openbare website van EliasDH"
     },
     "app": {
-      "NAME": "EliasDH Applicatie",
+      "NAME": "EliasDH App",
       "DESCRIPTION": "Het klantenportaal van EliasDH"
     },
     "web": {
@@ -81,11 +81,11 @@
     },
     "mail": {
       "NAME": "EliasDH Mail",
-      "DESCRIPTION": "De zakelijke e-mail van EliasDH"
+      "DESCRIPTION": "De EliasDH Mail"
     },
     "domains": {
-      "NAME": "EliasDH Domein",
-      "DESCRIPTION": "Het beheer van de EliasDH-domeinen"
+      "NAME": "EliasDH DNS",
+      "DESCRIPTION": "De EliasDH DNS"
     }
   },
   "SEO": {
