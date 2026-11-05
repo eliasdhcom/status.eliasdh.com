@@ -4,7 +4,7 @@
     "method": "GET",
     "expectStatus": [200],
     "timeoutMs": 10000,
-    "degradedMs": 3000,
+    "degradedMs": 5000,
     "retries": 2,
     "retryDelayMs": 5000
   },
@@ -44,6 +44,7 @@
       "name": "EliasDH Mail",
       "group": "services",
       "type": "tls",
+      "degradedMs": 8000,
       "targets": [
         { "host": "imap.migadu.com", "port": 993, "expectGreeting": "* OK" },
         { "host": "smtp.migadu.com", "port": 465, "expectGreeting": "220" }

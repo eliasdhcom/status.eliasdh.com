@@ -16,7 +16,7 @@ const languageResolver: ResolveFn<Language> = (route) => inject(LanguageService)
 
 function pageRoutes(): Routes {
     return [
-        { path: '', component: StatusComponent, data: { title: 'EliasDH - Infrastructure Status', seo: 'STATUS' } },
+        { path: '', component: StatusComponent, data: { title: 'EliasDH - Status', seo: 'STATUS' } },
         { path: '**', loadComponent: () => import('./notfound/notfound.component').then(m => m.NotFoundComponent), data: { title: 'EliasDH - Not Found', seo: 'NOTFOUND', robots: NO_INDEX } }
     ];
 }

@@ -27,7 +27,7 @@
     "EMAIL": "E-mail ons"
   },
   "STATUS": {
-    "TITLE": "Infrastructuurstatus",
+    "TITLE": "Status",
     "BACK": "Terug",
     "LOADING": "Status controleren...",
     "ALL_OPERATIONAL": "Alle systemen operationeel",

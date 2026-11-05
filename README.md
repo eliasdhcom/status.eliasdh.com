@@ -5,8 +5,7 @@
 
 1. [📘Table of Contents](#📘table-of-contents)
 2. [🖖Introduction](#🖖introduction)
-3. [🧩Structure](#🧩structure)
-4. [🔗Links](#🔗links)
+3. [🔗Links](#🔗links)
 
 ---
 
@@ -23,18 +22,6 @@ Please also see following documents:
 - [SECURITY](SECURITY.md)
 - [CONTRIBUTING](CONTRIBUTING.md)
 - [CODE OF CONDUCT](CODE-OF-CONDUCT.md)
-- [GITHUB PAGES](GITHUB-PAGES.md)
-
-## 🧩Structure
-
-| Path | Purpose |
-| --- | --- |
-| `App/Frontend` | The Angular website (same theme and UI components as [eliasdh.com](https://eliasdh.com)). |
-| `App/Monitor` | The checker that probes our websites and webservices. The list of checks is in `App/Monitor/services.json`. |
-| `.github/workflows/status.yaml` | Checks the status every 5 minutes, builds the site and deploys it to GitHub Pages. |
-| `.github/workflows/ci.yaml` | Runs the tests and a build on every pull request. |
-
-There is no backend and no Docker image: the site is static and the pipeline is the only moving part.
 
 ## 🔗Links
 - 👯 Web hosting company [EliasDH.com](https://eliasdh.com).

@@ -27,7 +27,7 @@
     "EMAIL": "Email us"
   },
   "STATUS": {
-    "TITLE": "Infrastructure Status",
+    "TITLE": "Status",
     "BACK": "Back",
     "LOADING": "Checking status...",
     "ALL_OPERATIONAL": "All systems operational",

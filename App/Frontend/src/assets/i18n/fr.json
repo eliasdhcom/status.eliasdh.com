@@ -27,7 +27,7 @@
     "EMAIL": "Envoyez-nous un e-mail"
   },
   "STATUS": {
-    "TITLE": "État de l'infrastructure",
+    "TITLE": "Statut",
     "BACK": "Retour",
     "LOADING": "Vérification du statut...",
     "ALL_OPERATIONAL": "Tous les systèmes sont opérationnels",

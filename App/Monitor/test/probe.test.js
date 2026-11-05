@@ -42,7 +42,7 @@ test('a fast 200 response is operational', async () => {
 test('a slow response is degraded', async () => {
     let tick = 0;
     const { fetch } = sequence(response(200, 'ok'));
-    const result = await probe(site, { ...base, fetch, clock: () => (tick += 4000) });
+    const result = await probe(site, { ...base, fetch, clock: () => (tick += 6000) });
     assert.equal(result.status, 'degraded');
     assert.equal(result.reason, 'slow response');
 });

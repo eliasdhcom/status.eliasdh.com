@@ -27,7 +27,7 @@
     "EMAIL": "Envíanos un correo"
   },
   "STATUS": {
-    "TITLE": "Estado de la infraestructura",
+    "TITLE": "Estado",
     "BACK": "Volver",
     "LOADING": "Comprobando el estado...",
     "ALL_OPERATIONAL": "Todos los sistemas operativos",

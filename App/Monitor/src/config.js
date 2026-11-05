@@ -13,7 +13,7 @@ const BUILT_IN_DEFAULTS = {
     method: 'GET',
     expectStatus: [200],
     timeoutMs: 10000,
-    degradedMs: 3000,
+    degradedMs: 5000,
     retries: 2,
     retryDelayMs: 5000
 };

@@ -27,7 +27,7 @@
     "EMAIL": "E-Mail senden"
   },
   "STATUS": {
-    "TITLE": "Infrastrukturstatus",
+    "TITLE": "Status",
     "BACK": "Zurück",
     "LOADING": "Status wird geprüft...",
     "ALL_OPERATIONAL": "Alle Systeme funktionieren einwandfrei",
