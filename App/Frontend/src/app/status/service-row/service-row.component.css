@@ -21,6 +21,24 @@
     gap: 16px;
 }
 
+.service-row-title {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    min-width: 0;
+}
+
+.service-row-icon {
+    flex-shrink: 0;
+    box-sizing: content-box;
+    width: 22px;
+    height: 22px;
+    padding: 9px;
+    border-radius: var(--radius);
+    background: var(--tint);
+    color: var(--link);
+}
+
 .service-row-name h3 {
     color: var(--title);
     font-size: 1.125rem;

@@ -52,7 +52,7 @@
     },
     {
       "id": "domains",
-      "name": "EliasDH Domains",
+      "name": "EliasDH Domain",
       "group": "services",
       "url": "https://eu.api.ovh.com/1.0/auth/time"
     }

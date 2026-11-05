@@ -84,7 +84,7 @@
       "DESCRIPTION": "The EliasDH business email"
     },
     "domains": {
-      "NAME": "EliasDH Domains",
+      "NAME": "EliasDH Domain",
       "DESCRIPTION": "The management of the EliasDH domains"
     }
   },
