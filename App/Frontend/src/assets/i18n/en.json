@@ -5,6 +5,7 @@
   },
   "FOOTER": {
     "TRANSLATE1": "Policy",
+    "TRANSLATE2": "Map",
     "TRANSLATE3": "Status",
     "TRANSLATE5": "Legal",
     "TRANSLATE6": "Designed by the EliasDH Team",
@@ -15,7 +16,8 @@
     "HOME": "Home",
     "LEGAL": "Legal",
     "CONTACT": "Contact",
-    "BLOGS": "Blogs"
+    "BLOGS": "Blogs",
+    "BUILDER": "Build a website"
   },
   "CONTEXTMENU": {
     "TRANSLATE1": "Copy Link Address",

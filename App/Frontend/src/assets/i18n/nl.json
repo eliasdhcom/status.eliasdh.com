@@ -5,6 +5,7 @@
   },
   "FOOTER": {
     "TRANSLATE1": "Beleid",
+    "TRANSLATE2": "Kaart",
     "TRANSLATE3": "Status",
     "TRANSLATE5": "Juridisch",
     "TRANSLATE6": "Ontworpen door het EliasDH Team",
@@ -15,7 +16,8 @@
     "HOME": "Home",
     "LEGAL": "Juridisch",
     "CONTACT": "Contact",
-    "BLOGS": "Blogs"
+    "BLOGS": "Blogs",
+    "BUILDER": "Website bouwen"
   },
   "CONTEXTMENU": {
     "TRANSLATE1": "Kopieer linkadres",
