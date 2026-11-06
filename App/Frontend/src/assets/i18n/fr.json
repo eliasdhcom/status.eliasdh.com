@@ -5,6 +5,7 @@
   },
   "FOOTER": {
     "TRANSLATE1": "Politique",
+    "TRANSLATE2": "Carte",
     "TRANSLATE3": "Statut",
     "TRANSLATE5": "Légal",
     "TRANSLATE6": "Conçu par l'équipe EliasDH",
@@ -15,7 +16,8 @@
     "HOME": "Accueil",
     "LEGAL": "Juridique",
     "CONTACT": "Contact",
-    "BLOGS": "Blogs"
+    "BLOGS": "Blogs",
+    "BUILDER": "Créer un site"
   },
   "CONTEXTMENU": {
     "TRANSLATE1": "Copier l'adresse du lien",
