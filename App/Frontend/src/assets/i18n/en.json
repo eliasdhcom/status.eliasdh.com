@@ -69,7 +69,7 @@
     },
     "app": {
       "NAME": "EliasDH App",
-      "DESCRIPTION": "The EliasDH customer portal"
+      "DESCRIPTION": "The EliasDH App"
     },
     "web": {
       "NAME": "EliasDH Web",
