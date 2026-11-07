@@ -4,11 +4,21 @@
     * @since 01/01/2025
 **/
 
-/* Context Menu */
-.contextmenu {
-    position: absolute;
-    display: none;
-    z-index: 3;
+:host {
+    --cm-surface: #f6f7f9;
+    --cm-border: rgba(128, 128, 128, 0.25);
+    --cm-text: #0c0e11;
+    --cm-link: #4f94f0;
+    --cm-tint: rgba(79, 148, 240, 0.12);
+    --cm-shadow: 0 8px 24px rgba(0, 0, 0, 0.14);
+}
+
+:host-context([data-theme='dark']) {
+    --cm-surface: #060709;
+    --cm-text: #edeff2;
+    --cm-link: #86b6ff;
+    --cm-tint: rgba(15, 84, 174, 0.18);
+    --cm-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
 }
 
 .contextmenu-svg {
@@ -16,25 +26,26 @@
     width: 16px;
     height: 16px;
     margin-right: 12px;
-    fill: var(--link);
+    fill: var(--cm-link);
 }
 
 .contextmenu-item {
-    position: absolute;
-    z-index: 2100;
+    position: fixed;
+    z-index: 2147483647;
+    box-sizing: border-box;
     min-width: 200px;
     margin: 0;
     padding: 6px;
     list-style: none;
-    border: 1px solid var(--border);
-    border-radius: var(--radius-lg);
-    background-color: var(--surface);
-    box-shadow: var(--shadow-md);
+    border: 1px solid var(--cm-border);
+    border-radius: 16px;
+    background-color: var(--cm-surface);
+    box-shadow: var(--cm-shadow);
 }
 
 .contextmenu-item p {
     margin: 0;
-    color: var(--text);
+    color: var(--cm-text);
     font-size: 0.9375rem;
 }
 
@@ -42,13 +53,12 @@
     display: flex;
     align-items: center;
     padding: 9px 12px;
-    border-radius: var(--radius-sm);
+    border-radius: 8px;
     font: inherit;
     font-weight: 500;
     transition: background-color 0.15s ease;
 }
 
 .contextmenu-item li:hover {
-    background-color: var(--tint);
+    background-color: var(--cm-tint);
 }
-/* Context Menu */
