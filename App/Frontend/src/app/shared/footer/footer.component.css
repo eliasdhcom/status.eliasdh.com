@@ -124,6 +124,23 @@
     transition: color 0.2s ease;
 }
 
+.footer-link-button {
+    padding: 0;
+    border: 0;
+    background: none;
+    color: var(--muted);
+    font: inherit;
+    font-weight: 500;
+    text-align: left;
+    transition: color 0.2s ease;
+}
+
+.footer-link-button:hover {
+    color: var(--link);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
 .footer-column a:hover {
     color: var(--link);
     text-decoration: underline;

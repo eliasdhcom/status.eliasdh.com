@@ -15,7 +15,8 @@
     "HOME": "Home",
     "LEGAL": "Juridisch",
     "CONTACT": "Contact",
-    "BLOGS": "Blogs"
+    "BLOGS": "Blogs",
+    "COOKIES": "Cookie-instellingen"
   },
   "CONTEXTMENU": {
     "TRANSLATE1": "Kopieer linkadres",
@@ -100,5 +101,13 @@
     "TITLE": "Deze pagina bestaat niet (meer)",
     "TEXT": "Geen zorgen: de actuele status van onze systemen vind je op de startpagina.",
     "WEBSITE": "Naar eliasdh.com"
+  },
+  "COOKIE-CONSENT": {
+    "TITLE": "Cookies & Privacy",
+    "TEXT": "We bewaren enkel met uw toestemming functionele gegevens op uw toestel: uw taal- en themakeuze. Weigert u, dan onthouden we alleen die keuze en bewaren we niets anders. We gebruiken geen advertentie- of trackingcookies.",
+    "PRIVACY-LINK": "Privacybeleid",
+    "LEGAL-LINK": "Juridische richtlijnen",
+    "ACCEPT": "Accepteren",
+    "DECLINE": "Weigeren"
   }
 }

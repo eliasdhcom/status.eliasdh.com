@@ -1,0 +1,82 @@
+/**
+    * @author EliasDH Team
+    * @see https://eliasdh.com
+    * @since 07/11/2026
+**/
+
+.cookie-banner {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 1500;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: calc(100% - 40px);
+    max-width: 400px;
+    padding: 20px 22px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    background: var(--surface);
+    box-shadow: var(--shadow-lg);
+    animation: cookie-rise 0.4s var(--ease-out);
+}
+
+@keyframes cookie-rise {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cookie-title {
+    font-size: 1.0625rem;
+    font-weight: 700;
+    color: var(--title);
+}
+
+.cookie-text {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.55;
+}
+
+.cookie-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 16px;
+    margin: 0;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.cookie-links a {
+    color: var(--link);
+    text-underline-offset: 3px;
+}
+
+.cookie-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 4px;
+}
+
+.cookie-buttons .global-button {
+    flex: 1;
+    box-shadow: none;
+}
+
+@media (max-width: 600px) {
+    .cookie-banner {
+        left: 12px;
+        bottom: 12px;
+        width: calc(100% - 24px);
+        max-width: none;
+        padding: 16px 18px;
+    }
+}

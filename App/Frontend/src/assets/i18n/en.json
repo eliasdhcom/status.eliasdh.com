@@ -15,7 +15,8 @@
     "HOME": "Home",
     "LEGAL": "Legal",
     "CONTACT": "Contact",
-    "BLOGS": "Blogs"
+    "BLOGS": "Blogs",
+    "COOKIES": "Cookie settings"
   },
   "CONTEXTMENU": {
     "TRANSLATE1": "Copy Link Address",
@@ -100,5 +101,13 @@
     "TITLE": "This page doesn't exist (anymore)",
     "TEXT": "No worries: you can find the current status of our systems on the home page.",
     "WEBSITE": "Go to eliasdh.com"
+  },
+  "COOKIE-CONSENT": {
+    "TITLE": "Cookies & Privacy",
+    "TEXT": "With your consent we store a few functional settings on your device: your language and theme choice. If you decline, we only remember that choice and store nothing else. We use no advertising or tracking cookies.",
+    "PRIVACY-LINK": "Privacy Policy",
+    "LEGAL-LINK": "Legal Guidelines",
+    "ACCEPT": "Accept",
+    "DECLINE": "Decline"
   }
 }

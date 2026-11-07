@@ -10,12 +10,13 @@ import { filter, take } from 'rxjs/operators';
 import { ThemeService } from './services/theme.service';
 import { LanguageService } from './services/language.service';
 import { SeoService } from './seo/seo.service';
+import { CookieConsentComponent } from './shared/cookie-consent/cookie-consent.component';
 
 @Component({
     selector: 'app-root',
     standalone: true,
-    imports: [RouterModule],
-    template: `<router-outlet></router-outlet>`
+    imports: [RouterModule, CookieConsentComponent],
+    template: `<router-outlet></router-outlet><app-cookie-consent></app-cookie-consent>`
 })
 
 export class AppComponent {

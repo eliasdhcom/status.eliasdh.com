@@ -9,7 +9,7 @@ import { isPlatformBrowser } from '@angular/common';
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { Observable, map } from 'rxjs';
-import { safeGetItem, safeSetItem } from './safe-storage';
+import { safeGetItem, safeSetPreference } from './safe-storage';
 import { DEFAULT_LANGUAGE, Language, isLanguage, localizePath, splitLanguage } from '../seo/site.config';
 
 const PREFERENCE_KEY = 'language';
@@ -38,7 +38,7 @@ export class LanguageService {
     }
 
     switchTo(lang: Language): void {
-        if (this.isBrowser) safeSetItem(PREFERENCE_KEY, lang);
+        if (this.isBrowser) safeSetPreference(PREFERENCE_KEY, lang);
         if (lang === this.currentLanguage) return;
         const { path } = splitLanguage(this.router.url);
         this.router.navigateByUrl(localizePath(path, lang));

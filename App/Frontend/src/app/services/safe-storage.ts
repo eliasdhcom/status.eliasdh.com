@@ -23,3 +23,13 @@ export function safeRemoveItem(key: string): void {
         localStorage.removeItem(key);
     } catch {}
 }
+
+export const CONSENT_KEY = 'cookieConsent';
+
+export function consentGiven(): boolean {
+    return safeGetItem(CONSENT_KEY) === 'accepted';
+}
+
+export function safeSetPreference(key: string, value: string): void {
+    if (consentGiven()) safeSetItem(key, value);
+}

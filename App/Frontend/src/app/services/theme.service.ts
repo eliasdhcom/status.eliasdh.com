@@ -6,7 +6,7 @@
 
 import { Injectable, Inject } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
-import { safeGetItem, safeSetItem } from './safe-storage';
+import { safeGetItem, safeSetPreference } from './safe-storage';
 
 @Injectable({
     providedIn: 'root'
@@ -26,7 +26,7 @@ export class ThemeService {
 
     toggleTheme(): void {
         this.isDark = !this.isDark;
-        safeSetItem('theme', this.isDark ? 'dark' : 'light');
+        safeSetPreference('theme', this.isDark ? 'dark' : 'light');
         this.applyTheme();
     }
 
