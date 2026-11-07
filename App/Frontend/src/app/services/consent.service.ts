@@ -1,9 +1,3 @@
-/**
-    * @author EliasDH Team
-    * @see https://eliasdh.com
-    * @since 07/11/2026
-**/
-
 import { Injectable, PLATFORM_ID, computed, inject, signal } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { CONSENT_KEY, safeGetItem, safeRemoveItem, safeSetItem } from './safe-storage';

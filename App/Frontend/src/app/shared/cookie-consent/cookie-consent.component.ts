@@ -1,9 +1,3 @@
-/**
-    * @author EliasDH Team
-    * @see https://eliasdh.com
-    * @since 07/11/2026
-**/
-
 import { Component, PLATFORM_ID, computed, inject } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { TranslatePipe } from '@ngx-translate/core';
