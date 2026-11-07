@@ -7,10 +7,10 @@
         <a [href]="mainSite('/legalguidelines')" target="_blank" rel="noopener">{{'COOKIE-CONSENT.LEGAL-LINK' | translate}}</a>
     </p>
     <div class="cookie-buttons">
-        <button type="button" class="global-button global-button-secondary global-button-small" (click)="decline()">
+        <button type="button" class="cookie-button cookie-button-secondary" (click)="decline()">
             {{'COOKIE-CONSENT.DECLINE' | translate}}
         </button>
-        <button type="button" class="global-button global-button-small" (click)="accept()">
+        <button type="button" class="cookie-button" (click)="accept()">
             {{'COOKIE-CONSENT.ACCEPT' | translate}}
         </button>
     </div>
