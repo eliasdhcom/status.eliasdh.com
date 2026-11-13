@@ -662,3 +662,29 @@ select {
     border-radius: var(--radius-lg);
 }
 /* Global Styles */
+
+/* Colors of the shared EliasDH cookie banner (loaded from eliasdh.com, see ConsentService) */
+eliasdh-consent {
+    --cc-bg: #f6f7f9;
+    --cc-text: #0c0e11;
+    --cc-title-color: #4f94f0;
+    --cc-muted: #4f5a66;
+    --cc-link-color: #4f94f0;
+    --cc-border: rgba(128, 128, 128, 0.25);
+    --cc-border-strong: rgba(128, 128, 128, 0.4);
+    --cc-accent: #4f94f0;
+    --cc-on-accent: #ffffff;
+    --cc-radius: 16px;
+    --cc-button-radius: 999px;
+    --cc-shadow: 0 20px 60px rgba(0, 0, 0, 0.28);
+}
+
+[data-theme='dark'] eliasdh-consent {
+    --cc-bg: #060709;
+    --cc-text: #edeff2;
+    --cc-title-color: #86b6ff;
+    --cc-muted: #a3adb8;
+    --cc-link-color: #86b6ff;
+    --cc-accent: #0f54ae;
+    --cc-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+}

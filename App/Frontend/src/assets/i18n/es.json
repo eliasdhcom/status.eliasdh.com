@@ -103,13 +103,5 @@
     "TITLE": "Esta página no existe (ya)",
     "TEXT": "No te preocupes: el estado actual de nuestros sistemas está en la página de inicio.",
     "WEBSITE": "Ir a eliasdh.com"
-  },
-  "COOKIE-CONSENT": {
-    "TITLE": "Cookies y Privacidad",
-    "TEXT": "Con tu consentimiento guardamos algunos ajustes funcionales en tu dispositivo: tu idioma y tu tema. Si rechazas, solo recordamos esa decisión y no guardamos nada más. Con tu consentimiento también contamos tu visita y de dónde vienes, por ejemplo Instagram o Facebook, para que el propietario de este sitio pueda ver estadísticas. Para ello no colocamos cookies ni guardamos tu dirección IP. Puedes cambiar tu elección en cualquier momento en la configuración de cookies. No usamos cookies publicitarias ni de seguimiento.",
-    "PRIVACY-LINK": "Política de privacidad",
-    "LEGAL-LINK": "Directrices legales",
-    "ACCEPT": "Aceptar",
-    "DECLINE": "Rechazar"
   }
 }

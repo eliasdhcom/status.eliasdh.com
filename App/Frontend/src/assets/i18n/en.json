@@ -103,13 +103,5 @@
     "TITLE": "This page doesn't exist (anymore)",
     "TEXT": "No worries: you can find the current status of our systems on the home page.",
     "WEBSITE": "Go to eliasdh.com"
-  },
-  "COOKIE-CONSENT": {
-    "TITLE": "Cookies & Privacy",
-    "TEXT": "With your consent we store a few functional settings on your device: your language and theme choice. If you decline, we only remember that choice and store nothing else. With your consent we also count your visit and where you came from, for example Instagram or Facebook, so that the owner of this website can see statistics. We place no cookies for this and do not store your IP address. You can change your choice at any time in the cookie settings. We use no advertising or tracking cookies.",
-    "PRIVACY-LINK": "Privacy Policy",
-    "LEGAL-LINK": "Legal Guidelines",
-    "ACCEPT": "Accept",
-    "DECLINE": "Decline"
   }
 }
