@@ -89,6 +89,62 @@
     "domains": {
       "NAME": "EliasDH DNS",
       "DESCRIPTION": "De EliasDH DNS"
+    },
+    "MENU": "Diensten",
+    "GROUP_PRESENCE": "Online aanwezig",
+    "GROUP_BUILD": "Op maat gebouwd",
+    "DIAGRAM": {
+      "DOMAIN": "jouwbedrijf",
+      "COMPANY": "Jouwbedrijf BV",
+      "SPEED": "Snelheid",
+      "MOBILE": "Mobiel",
+      "INBOX": "Inbox",
+      "LAPTOP": "Laptop",
+      "PHONE": "Telefoon",
+      "SYNCED": "In sync",
+      "PROTECTED": "Beveiligd",
+      "SEARCH": "Zoek",
+      "AVAILABLE": "Beschikbaar",
+      "TAKEN": "Bezet",
+      "BOOKINGS": "Boekingen",
+      "CUSTOMERS": "Klanten",
+      "REVENUE": "Omzet",
+      "PER_MONTH": "Omzet per maand",
+      "NEW_BOOKING": "Nieuwe boeking",
+      "INSTALL": "Installeer de app",
+      "OFFLINE": "Werkt offline",
+      "PUSH": "Pushmeldingen",
+      "NEW_ORDER": "Nieuwe order",
+      "YOUR_APP": "Jouw app",
+      "DATABASE": "Database"
+    },
+    "WEB": {
+      "NAME": "Websites",
+      "SHORT": "Snel, vindbaar en op maat"
+    },
+    "MAIL": {
+      "NAME": "Zakelijke mail",
+      "SHORT": "Mailboxen op je eigen domein"
+    },
+    "DOMAINS": {
+      "NAME": "Domeinnamen",
+      "SHORT": "Registratie en DNS-beheer"
+    },
+    "WEBAPPS": {
+      "NAME": "Webapplicaties",
+      "SHORT": "Portalen, dashboards en platformen"
+    },
+    "PWA": {
+      "NAME": "Progressive Web Apps",
+      "SHORT": "Een app via de browser"
+    },
+    "MOBILE": {
+      "NAME": "iOS- en Android-apps",
+      "SHORT": "Apps voor iPhone en Android"
+    },
+    "API": {
+      "NAME": "API's en koppelingen",
+      "SHORT": "Systemen die met elkaar praten"
     }
   },
   "SEO": {

@@ -1,5 +1,45 @@
 <!--Author EliasDH Team-->
 <nav class="contact-bar" [class.contact-bar-hidden]="!visible" role="navigation" aria-label="Contact information" itemscope itemtype="https://schema.org/Organization">
+    <button type="button" #servicesButton class="contact-bar-item contact-bar-services cursor-pointer" [class.open]="servicesOpen" [attr.aria-expanded]="servicesOpen" aria-controls="services-menu" (click)="toggleServices($event)">
+        <svg viewBox="0 0 16 16" class="cursor-pointer contact-bar-svg" aria-hidden="true">
+            <path class="cursor-pointer" d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5z"/>
+        </svg>
+        <span class="cursor-pointer">{{ 'SERVICES.MENU' | translate }}</span>
+        <svg viewBox="0 0 16 16" class="cursor-pointer contact-bar-chevron" aria-hidden="true">
+            <path class="cursor-pointer" d="M4 6l4 4 4-4"/>
+        </svg>
+    </button>
+    @if (servicesOpen) {
+        <div class="services-menu" id="services-menu" (click)="$event.stopPropagation()">
+            <div class="services-menu-list">
+                @for (group of serviceGroups; track group.id) {
+                    <p class="services-menu-group">{{ group.labelKey | translate }}</p>
+                    <ul>
+                        @for (service of servicesIn(group.id); track service.slug) {
+                            <li>
+                                <a class="services-menu-link cursor-pointer" [class.active]="activeService === service.slug" [href]="serviceUrl(service.slug)" (mouseenter)="activeService = service.slug" (focus)="activeService = service.slug" (click)="closeServices()">
+                                    <span class="services-menu-icon" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24">
+                                            @for (d of service.icon; track d) {
+                                                <path [attr.d]="d"/>
+                                            }
+                                        </svg>
+                                    </span>
+                                    <span class="services-menu-text cursor-pointer">
+                                        <strong class="cursor-pointer">{{ 'SERVICES.' + service.key + '.NAME' | translate }}</strong>
+                                        <small class="cursor-pointer">{{ 'SERVICES.' + service.key + '.SHORT' | translate }}</small>
+                                    </span>
+                                </a>
+                            </li>
+                        }
+                    </ul>
+                }
+            </div>
+            <div class="services-menu-preview" aria-hidden="true">
+                <app-service-diagram [kind]="activeService" [bare]="true"></app-service-diagram>
+            </div>
+        </div>
+    }
     <a href="tel:+32474110316" class="contact-bar-item cursor-pointer" title="{{'CONTACTBAR.CALL' | translate}}" aria-label="Call us at +32 474 11 03 16" itemprop="telephone">
         <svg viewBox="0 0 16 16" class="cursor-pointer contact-bar-svg" aria-hidden="true">
             <path class="cursor-pointer" d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>

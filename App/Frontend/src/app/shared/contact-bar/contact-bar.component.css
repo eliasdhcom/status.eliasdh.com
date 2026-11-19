@@ -150,6 +150,170 @@
     margin: 2px 5px;
 }
 
+/* Services mega menu */
+.contact-bar-services {
+    border: 0;
+    background: none;
+    font: inherit;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.contact-bar-services.open::before {
+    opacity: 1;
+}
+
+.contact-bar-chevron {
+    width: 12px;
+    height: 12px;
+    margin-left: -2px;
+    fill: none;
+    stroke: #fff;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: transform 0.25s var(--ease-out);
+}
+
+.contact-bar-services.open .contact-bar-chevron {
+    transform: rotate(180deg);
+}
+
+.services-menu {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    z-index: 1003;
+    display: grid;
+    grid-template-columns: 286px minmax(0, 1fr);
+    width: min(820px, calc(100vw - 40px));
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    background: var(--background);
+    color: var(--text);
+    box-shadow: var(--shadow-lg);
+    transform-origin: top right;
+    animation: services-menu-in 0.24s var(--ease-out);
+}
+
+@keyframes services-menu-in {
+    from {
+        opacity: 0;
+        transform: translateY(-6px) scale(0.98);
+    }
+}
+
+.services-menu-list {
+    padding: 10px 10px 12px;
+    border-right: 1px solid var(--border);
+}
+
+.services-menu-group {
+    margin: 12px 12px 6px;
+    color: var(--muted);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.services-menu-list ul {
+    display: grid;
+    gap: 2px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.services-menu-link {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 9px 12px;
+    border-radius: var(--radius);
+    color: var(--text);
+    text-decoration: none;
+    transition: background-color 0.15s ease;
+}
+
+.services-menu-link:hover,
+.services-menu-link.active {
+    background: var(--surface-alt);
+}
+
+.services-menu-link:focus-visible {
+    outline: 2px solid var(--link);
+    outline-offset: -2px;
+}
+
+.services-menu-icon svg {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-top: 1px;
+    fill: none;
+    stroke: var(--muted);
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: stroke 0.15s ease;
+}
+
+.services-menu-link.active .services-menu-icon svg {
+    stroke: var(--link);
+}
+
+.services-menu-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+}
+
+.services-menu-text strong {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.services-menu-text small {
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.35;
+}
+
+.services-menu-preview {
+    display: flex;
+    align-items: center;
+    padding: 22px;
+    background-color: var(--surface-alt);
+    background-image: radial-gradient(color-mix(in srgb, var(--text) 13%, transparent) 1px, transparent 1.3px);
+    background-size: 14px 14px;
+}
+
+.services-menu-preview app-service-diagram {
+    width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .services-menu {
+        animation: none;
+    }
+}
+
+@media (max-width: 1600px) {
+    .contact-bar-item[href^="mailto:"] span {
+        display: none;
+    }
+}
+
+@media (max-width: 1440px) {
+    .contact-bar-item[href^="tel:"] span {
+        display: none;
+    }
+}
+
 @media (max-width: 1200px) {
     .contact-bar {
         flex-direction: column;
@@ -196,6 +360,33 @@
     .contact-bar-language .global-dropdown-menu li {
         padding: 8px 12px;
         font-size: 12px;
+    }
+
+    .contact-bar-chevron {
+        display: none;
+    }
+
+    .services-menu {
+        top: -9px;
+        right: calc(100% + 10px);
+        width: min(780px, calc(100vw - 92px));
+        max-height: calc(100dvh - 20px);
+        overflow-y: auto;
+    }
+}
+
+@media (max-width: 760px) {
+    .services-menu {
+        grid-template-columns: 1fr;
+        border-radius: var(--radius-lg);
+    }
+
+    .services-menu-list {
+        border-right: 0;
+    }
+
+    .services-menu-preview {
+        display: none;
     }
 }
 /* Contact Bar */

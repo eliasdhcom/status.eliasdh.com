@@ -13,7 +13,7 @@
 
 .footer-inner {
     display: grid;
-    grid-template-columns: 1.7fr 1fr 1fr 1.3fr;
+    grid-template-columns: 2fr 1.1fr 1fr 1fr 1.1fr;
     gap: clamp(28px, 4vw, 56px);
     width: min(100% - 2 * var(--gutter), 1200px);
     margin-inline: auto;
@@ -187,10 +187,6 @@
 @media (max-width: 520px) {
     .footer-inner {
         row-gap: 32px;
-    }
-
-    .footer-column:last-child {
-        grid-column: 1 / -1;
     }
 
     .footer-bottom {

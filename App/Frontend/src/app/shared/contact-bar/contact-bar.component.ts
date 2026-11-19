@@ -4,22 +4,27 @@
     * @since 01/01/2025
 **/
 
-import { Component, OnInit, OnDestroy, HostListener, ElementRef, PLATFORM_ID, inject } from '@angular/core';
+import { Component, OnInit, OnDestroy, HostListener, ElementRef, PLATFORM_ID, ViewChild, inject } from '@angular/core';
 import { TranslatePipe } from "@ngx-translate/core";
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { LanguageService } from '../../services/language.service';
 import { LANGUAGES, LANGUAGE_NAMES, Language } from '../../seo/site.config';
+import { SERVICES, SERVICE_GROUPS, ServiceDef, ServiceGroup, ServiceSlug, serviceUrl } from '../service-diagram/service-catalog';
+import { ServiceDiagramComponent } from '../service-diagram/service-diagram.component';
 
 @Component({
     selector: 'app-contact-bar',
     templateUrl: './contact-bar.component.html',
     styleUrls: ['./contact-bar.component.css'],
-    imports: [TranslatePipe, CommonModule],
+    imports: [TranslatePipe, CommonModule, ServiceDiagramComponent],
     standalone: true
 })
 
 export class ContactBarComponent implements OnInit, OnDestroy {
     dropdownOpen: boolean = false;
+    servicesOpen: boolean = false;
+    activeService: ServiceSlug = 'web';
+    readonly serviceGroups = SERVICE_GROUPS;
     currentLanguage: Language = 'nl';
     visible: boolean = true;
 
@@ -33,6 +38,8 @@ export class ContactBarComponent implements OnInit, OnDestroy {
     };
 
     private readonly platformId = inject(PLATFORM_ID);
+
+    @ViewChild('servicesButton') private servicesButton?: ElementRef<HTMLButtonElement>;
 
     constructor(private languageService: LanguageService, private elementRef: ElementRef) { }
 
@@ -50,7 +57,7 @@ export class ContactBarComponent implements OnInit, OnDestroy {
         this.visible = true;
         if (this.idleTimer) clearTimeout(this.idleTimer);
         this.idleTimer = setTimeout(() => {
-            if (!this.dropdownOpen) this.visible = false;
+            if (!this.dropdownOpen && !this.servicesOpen) this.visible = false;
         }, this.idleDelay);
     }
 
@@ -78,6 +85,37 @@ export class ContactBarComponent implements OnInit, OnDestroy {
     toggleDropdown(event: Event) {
         event.stopPropagation();
         this.dropdownOpen = !this.dropdownOpen;
+        if (this.dropdownOpen) this.servicesOpen = false;
+    }
+
+    servicesIn(group: ServiceGroup): ServiceDef[] {
+        return SERVICES.filter(service => service.group === group);
+    }
+
+    serviceUrl(slug: ServiceSlug): string {
+        return serviceUrl(slug, this.currentLanguage);
+    }
+
+    toggleServices(event: Event): void {
+        event.stopPropagation();
+        if (this.servicesOpen) {
+            this.servicesOpen = false;
+            return;
+        }
+        this.activeService = 'web';
+        this.dropdownOpen = false;
+        this.servicesOpen = true;
+    }
+
+    closeServices(restoreFocus: boolean = false): void {
+        this.servicesOpen = false;
+        if (restoreFocus) this.servicesButton?.nativeElement.focus();
+    }
+
+    @HostListener('document:keydown.escape')
+    onEscape(): void {
+        if (this.servicesOpen) this.closeServices(true);
+        this.dropdownOpen = false;
     }
 
     @HostListener('document:click', ['$event'])
@@ -85,8 +123,9 @@ export class ContactBarComponent implements OnInit, OnDestroy {
         const clickTarget = event.target as HTMLElement;
         const isClickInsideDropdown = this.elementRef.nativeElement.contains(clickTarget);
         
-        if (!isClickInsideDropdown && this.dropdownOpen) {
+        if (!isClickInsideDropdown) {
             this.dropdownOpen = false;
+            this.servicesOpen = false;
         }
     }
 }

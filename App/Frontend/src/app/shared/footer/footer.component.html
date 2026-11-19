@@ -42,6 +42,15 @@
                 </li>
             </ul>
         </div>
+        <nav class="footer-column" [attr.aria-label]="'SERVICES.MENU' | translate">
+            <h2>{{'SERVICES.MENU' | translate}}</h2>
+            <ul>
+                @for (service of services; track service.slug) {
+                    <li><a [href]="mainSite(servicePath(service.slug))">{{ 'SERVICES.' + service.key + '.NAME' | translate }}</a></li>
+                }
+            </ul>
+        </nav>
+
         <nav class="footer-column" [attr.aria-label]="'FOOTER.EXPLORE' | translate">
             <h2>{{'FOOTER.EXPLORE' | translate}}</h2>
             <ul>

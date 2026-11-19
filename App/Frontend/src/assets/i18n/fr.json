@@ -89,6 +89,62 @@
     "domains": {
       "NAME": "EliasDH DNS",
       "DESCRIPTION": "L'EliasDH DNS"
+    },
+    "MENU": "Services",
+    "GROUP_PRESENCE": "Présence en ligne",
+    "GROUP_BUILD": "Développement sur mesure",
+    "DIAGRAM": {
+      "DOMAIN": "monentreprise",
+      "COMPANY": "Mon Entreprise SRL",
+      "SPEED": "Vitesse",
+      "MOBILE": "Mobile",
+      "INBOX": "Boîte de réception",
+      "LAPTOP": "Ordinateur",
+      "PHONE": "Téléphone",
+      "SYNCED": "Synchronisé",
+      "PROTECTED": "Protégé",
+      "SEARCH": "Chercher",
+      "AVAILABLE": "Disponible",
+      "TAKEN": "Pris",
+      "BOOKINGS": "Réservations",
+      "CUSTOMERS": "Clients",
+      "REVENUE": "Revenus",
+      "PER_MONTH": "Revenus par mois",
+      "NEW_BOOKING": "Réservation reçue",
+      "INSTALL": "Installer l'app",
+      "OFFLINE": "Hors ligne",
+      "PUSH": "Notifications",
+      "NEW_ORDER": "Commande reçue",
+      "YOUR_APP": "Votre app",
+      "DATABASE": "Base de données"
+    },
+    "WEB": {
+      "NAME": "Sites web",
+      "SHORT": "Rapides, visibles et sur mesure"
+    },
+    "MAIL": {
+      "NAME": "E-mail professionnel",
+      "SHORT": "Boîtes mail sur votre propre domaine"
+    },
+    "DOMAINS": {
+      "NAME": "Noms de domaine",
+      "SHORT": "Enregistrement et gestion DNS"
+    },
+    "WEBAPPS": {
+      "NAME": "Applications web",
+      "SHORT": "Portails, tableaux de bord et plateformes"
+    },
+    "PWA": {
+      "NAME": "Progressive Web Apps",
+      "SHORT": "Une app via le navigateur"
+    },
+    "MOBILE": {
+      "NAME": "Apps iOS et Android",
+      "SHORT": "Apps pour iPhone et Android"
+    },
+    "API": {
+      "NAME": "API et intégrations",
+      "SHORT": "Des systèmes qui communiquent"
     }
   },
   "SEO": {

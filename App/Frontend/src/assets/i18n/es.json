@@ -89,6 +89,62 @@
     "domains": {
       "NAME": "EliasDH DNS",
       "DESCRIPTION": "El EliasDH DNS"
+    },
+    "MENU": "Servicios",
+    "GROUP_PRESENCE": "Presencia online",
+    "GROUP_BUILD": "Desarrollo a medida",
+    "DIAGRAM": {
+      "DOMAIN": "tuempresa",
+      "COMPANY": "Tu Empresa SL",
+      "SPEED": "Velocidad",
+      "MOBILE": "Móvil",
+      "INBOX": "Bandeja de entrada",
+      "LAPTOP": "Portátil",
+      "PHONE": "Teléfono",
+      "SYNCED": "Sincronizado",
+      "PROTECTED": "Protegido",
+      "SEARCH": "Buscar",
+      "AVAILABLE": "Disponible",
+      "TAKEN": "Ocupado",
+      "BOOKINGS": "Reservas",
+      "CUSTOMERS": "Clientes",
+      "REVENUE": "Ingresos",
+      "PER_MONTH": "Ingresos por mes",
+      "NEW_BOOKING": "Nueva reserva",
+      "INSTALL": "Instalar la app",
+      "OFFLINE": "Sin conexión",
+      "PUSH": "Notificaciones",
+      "NEW_ORDER": "Nuevo pedido",
+      "YOUR_APP": "Tu app",
+      "DATABASE": "Base de datos"
+    },
+    "WEB": {
+      "NAME": "Sitios web",
+      "SHORT": "Rápidos, visibles y a medida"
+    },
+    "MAIL": {
+      "NAME": "Correo profesional",
+      "SHORT": "Buzones con tu propio dominio"
+    },
+    "DOMAINS": {
+      "NAME": "Dominios",
+      "SHORT": "Registro y gestión de DNS"
+    },
+    "WEBAPPS": {
+      "NAME": "Aplicaciones web",
+      "SHORT": "Portales, paneles y plataformas"
+    },
+    "PWA": {
+      "NAME": "Progressive Web Apps",
+      "SHORT": "Una app desde el navegador"
+    },
+    "MOBILE": {
+      "NAME": "Apps para iOS y Android",
+      "SHORT": "Apps para iPhone y Android"
+    },
+    "API": {
+      "NAME": "APIs e integraciones",
+      "SHORT": "Sistemas que se entienden"
     }
   },
   "SEO": {
