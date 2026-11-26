@@ -688,3 +688,10 @@ eliasdh-consent {
     --cc-accent: #0f54ae;
     --cc-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
 }
+
+icarus-chat {
+    --icarus-cursor: url('/assets/svg/cursor-auto.svg'), auto;
+    --icarus-cursor-pointer: url('/assets/svg/cursor-pointer.svg'), pointer;
+    --icarus-cursor-text: url('/assets/svg/cursor-text.svg'), text;
+    --icarus-cursor-default: url('/assets/svg/cursor-default.svg'), default;
+}
